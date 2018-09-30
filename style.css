@@ -1,0 +1,82 @@
+html, body{
+    box-sizing: border-box;
+    background: url(images/pexels-photo-1028714.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+.center{
+    background-color: rgba(105, 105, 105, 0.31);
+    position: absolute;
+    height: 45%;
+    top: 25%;
+    width: 25%;
+    left: 35%;
+    padding: 10px;
+    border: 1px solid grey;
+   
+}
+
+form{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 15px;
+}
+label, .btn, input[type=checkbox]{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    margin:0;
+    background-color: rgba(199, 170, 136, 0.23);
+}
+.btn{
+    margin-top: 30px;
+    padding: 5px 10px;
+    background-color: #C7AA88;
+    border: black 1px solid;
+    font-size: 15px;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: bold;
+    
+}
+.btn:hover{
+    background-color: #907b63;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #C7AA88;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.blank{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+
+}
+pre{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+
+}
+h2{
+    color: #C7AA88;
+    text-transform: uppercase;
+
+}
