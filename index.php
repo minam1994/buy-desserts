@@ -1,55 +1,30 @@
-<!DOCTYPE html>
-<html lang="">
+<DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link href="responsive.css" rel="stylesheet">
+
+
+    
 </head>
-
 <body>
+
     <div class="center">
-        <?php 
+        <h1>Buy desserts:</h1>
+        <form class="form" method="get" action="index1.php">
 
-            if(isset($_GET["item"])){
-                $dessert = $_GET["item"];
-                $c = count($dessert);
-                $price = 0.0;
+            <input type="checkbox" id="check1" class="box" name="item[]" value="1"><label for="check1">Cheesecake - 10$</label><br>
+            <input type="checkbox" id="check2" name="item[]" value="2"><label for="check2">Chocolate cake - 8$</label><br>
+            <input type="checkbox" id="check3" name="item[]" value="3"><label for="check3">Muffin - 5$</label><br>
+            <input type="checkbox" id="check4" name="item[]" value="4"><label for="check4">Vanilla cake - 7$</label><br>
 
-                for($i = 0; $i<$c; $i++){
-                    if($dessert[$i]==1){
-                        $price = $price + 10;
-                        echo "<pre>You have selected Cheesecake!</pre>";
-                    }
-                    if($dessert[$i]==2){
-                        $price = $price + 8;                
-                        echo "<pre>You have selected Chocolate cake!</pre>";
-                    }
-                    if($dessert[$i]==3){
-                        $price = $price + 5;
-                        echo "<pre>You have selected Muffin!</pre>";
-                    }
-                    if($dessert[$i]==4){
-                        $price = $price + 7;
-                        echo "<pre>You have selected Vanilla cake!</pre>";
-                    }
-
-                }
-                echo "<h2>Final price is: " .$price. "$</h2>";
-            } else{
-                ?>
-               <p class="blank">You need to choose item!</p>
-        <button class="btn"><a href="home.php">Go Back</a></button>
-            <?php
-            }
-
-        ?>
+            <button class="btn" type="submit">Order</button>
+        </form>
     </div>
     <footer>
         <small>&copy;<?php echo date('Y'); ?> - Mina Maksic</small>
     </footer>
-    
+
+
 </body>
 </html>

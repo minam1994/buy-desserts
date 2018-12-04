@@ -1,20 +1,21 @@
-html, body{
+body{
     box-sizing: border-box;
     background: url(images/pexels-photo-1028714.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
     margin: 0;
 }
 .center{
     background-color: rgba(105, 105, 105, 0.31);
+    height: 75%;
+    width: 600px;
     position: absolute;
-    height: 45%;
-    top: 25%;
-    width: 25%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 10px;
     border: 1px solid grey;
-   
 }
 
 form{
